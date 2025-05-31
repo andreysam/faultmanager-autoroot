@@ -351,6 +351,9 @@ perform_root() {
 
     log 'Rooting complete'
     toast 'Rooting complete. <h4>Do not install the LG Dev Mode app while rooted!</h4>'
+
+    rm -r /home/root/.ssh
+    log 'ssh deleted'
 }
 
 gen_random4() {
